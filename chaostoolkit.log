@@ -1,0 +1,501 @@
+[36m[2020-07-31 05:54:15 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 05:54:15 DEBUG] [cli:75][39m Running command 'discover'
+[36m[2020-07-31 05:54:15 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 05:54:16 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-07-31 05:54:16 DEBUG] [cli:444][39m Failed to discover chaostoolkit-ansible
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/chaoslib/discovery/package.py", line 49, in load_package
+        package = importlib.import_module(name)
+      File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+      File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+      File "/root/chaostoolkit-ansible/chaostoolkit_ansible/__init__.py", line 3, in <module>
+        import ansible_runner
+    ModuleNotFoundError: No module named 'ansible_runner'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/chaostoolkit/cli.py", line 441, in discover
+        download_and_install=not no_install)
+      File "/usr/local/lib/python3.6/site-packages/chaoslib/discovery/discover.py", line 33, in discover
+        package = load_package(package_name)
+      File "/usr/local/lib/python3.6/site-packages/chaoslib/discovery/package.py", line 52, in load_package
+        "could not load Python module '{name}'".format(name=name))
+    chaoslib.exceptions.DiscoveryFailed: could not load Python module 'chaostoolkit_ansible'
+[31m[2020-07-31 05:54:16 CRITICAL] [cli:445][39m could not load Python module 'chaostoolkit_ansible'
+[36m[2020-07-31 05:55:03 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 05:55:03 DEBUG] [cli:75][39m Running command 'discover'
+[36m[2020-07-31 05:55:03 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 05:55:03 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-07-31 05:55:03 DEBUG] [cli:444][39m Failed to discover chaostoolkit-ansible
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/chaoslib/discovery/package.py", line 49, in load_package
+        package = importlib.import_module(name)
+      File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+      File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+      File "/root/chaostoolkit-ansible/chaostoolkit_ansible/__init__.py", line 3, in <module>
+        import ansible_runner
+    ModuleNotFoundError: No module named 'ansible_runner'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/chaostoolkit/cli.py", line 441, in discover
+        download_and_install=not no_install)
+      File "/usr/local/lib/python3.6/site-packages/chaoslib/discovery/discover.py", line 33, in discover
+        package = load_package(package_name)
+      File "/usr/local/lib/python3.6/site-packages/chaoslib/discovery/package.py", line 52, in load_package
+        "could not load Python module '{name}'".format(name=name))
+    chaoslib.exceptions.DiscoveryFailed: could not load Python module 'chaostoolkit_ansible'
+[31m[2020-07-31 05:55:03 CRITICAL] [cli:445][39m could not load Python module 'chaostoolkit_ansible'
+[36m[2020-07-31 05:56:15 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 05:56:15 DEBUG] [cli:75][39m Running command 'discover'
+[36m[2020-07-31 05:56:15 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 05:56:16 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[32m[2020-07-31 05:56:16 INFO] [__init__:36][39m Discovering capabilities from chaostoolkit-ansible
+[32m[2020-07-31 05:56:16 INFO] [discover:73][39m Searching for actions in chaostoolkit_ansible.machine.actions
+[32m[2020-07-31 05:56:16 INFO] [cli:451][39m Discovery outcome saved in ./discovery.json
+[36m[2020-07-31 05:56:23 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 05:56:23 DEBUG] [cli:75][39m Running command 'init'
+[36m[2020-07-31 05:56:23 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 05:56:23 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-07-31 05:56:54 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 05:56:54 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-07-31 05:56:54 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 05:56:56 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-07-31 05:56:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-31 05:56:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-31 05:56:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-31 05:56:56 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-07-31 05:56:56 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-07-31 05:56:56 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-07-31 05:56:56 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-31 05:56:56 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-31 05:56:56 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-07-31 05:56:56 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-31 05:56:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-31 05:56:56 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-07-31 05:56:56 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-07-31 05:56:56 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-31 05:56:56 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-31 05:56:56 INFO] [run:320][39m Running experiment: test
+[36m[2020-07-31 05:56:56 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-31 05:56:56 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-07-31 05:56:56 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-07-31 05:56:56 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-07-31 05:56:56 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-31 05:56:56 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-07-31 05:56:56 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-31 05:56:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-31 05:56:56 INFO] [activity:161][39m Action: burn_cpu
+[36m[2020-07-31 05:56:56 DEBUG] [python:36][39m Activity 'burn_cpu' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-07-31 05:56:56 DEBUG] [actions:44][39m Start burn_cpu
+[36m[2020-07-31 05:56:58 DEBUG] [activity:179][39m   => succeeded with 'successful'
+[36m[2020-07-31 05:56:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-31 05:56:58 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-31 05:56:58 INFO] [run:807][39m Let's rollback...
+[36m[2020-07-31 05:56:58 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-31 05:56:58 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-07-31 05:56:58 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-31 05:56:58 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-07-31 05:56:58 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-31 05:56:58 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-31 05:56:58 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-31 06:00:24 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 06:00:24 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-07-31 06:00:24 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 06:00:26 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-07-31 06:00:26 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-31 06:00:26 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-31 06:00:26 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-31 06:00:26 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-07-31 06:00:26 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-07-31 06:00:26 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-07-31 06:00:26 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-31 06:00:26 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-31 06:00:26 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-07-31 06:00:26 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-31 06:00:26 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-31 06:00:26 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-07-31 06:00:26 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-07-31 06:00:26 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-31 06:00:26 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-31 06:00:26 INFO] [run:320][39m Running experiment: test
+[36m[2020-07-31 06:00:26 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-31 06:00:26 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-07-31 06:00:26 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-07-31 06:00:26 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-07-31 06:00:26 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-31 06:00:26 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-07-31 06:00:26 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-31 06:00:26 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-31 06:00:26 INFO] [activity:161][39m Action: burn_cpu
+[36m[2020-07-31 06:00:26 DEBUG] [python:36][39m Activity 'burn_cpu' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-07-31 06:00:26 DEBUG] [actions:44][39m Start burn_cpu
+[36m[2020-07-31 06:00:27 DEBUG] [activity:179][39m   => succeeded with 'failed'
+[36m[2020-07-31 06:00:27 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-31 06:00:27 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-31 06:00:27 INFO] [run:807][39m Let's rollback...
+[36m[2020-07-31 06:00:27 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-31 06:00:27 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-07-31 06:00:27 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-31 06:00:27 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-07-31 06:00:27 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-31 06:00:27 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-31 06:00:27 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-31 06:01:33 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-07-31 06:01:33 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-07-31 06:01:33 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-07-31 06:01:35 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-07-31 06:01:35 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-31 06:01:35 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-31 06:01:35 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-31 06:01:35 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-07-31 06:01:35 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-07-31 06:01:35 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-07-31 06:01:35 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-31 06:01:35 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-31 06:01:35 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-07-31 06:01:35 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-31 06:01:35 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-31 06:01:35 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-07-31 06:01:35 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-07-31 06:01:35 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-31 06:01:35 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-31 06:01:35 INFO] [run:320][39m Running experiment: test
+[36m[2020-07-31 06:01:35 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-31 06:01:35 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-07-31 06:01:35 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-07-31 06:01:35 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-07-31 06:01:35 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-31 06:01:35 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-07-31 06:01:35 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-31 06:01:35 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-31 06:01:35 INFO] [activity:161][39m Action: burn_cpu
+[36m[2020-07-31 06:01:35 DEBUG] [python:36][39m Activity 'burn_cpu' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-07-31 06:01:35 DEBUG] [actions:44][39m Start burn_cpu
+[36m[2020-07-31 06:02:43 DEBUG] [activity:179][39m   => succeeded with 'successful'
+[36m[2020-07-31 06:02:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-31 06:02:43 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-31 06:02:43 INFO] [run:807][39m Let's rollback...
+[36m[2020-07-31 06:02:43 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-31 06:02:43 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-07-31 06:02:43 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-31 06:02:43 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-07-31 06:02:43 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-31 06:02:43 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-31 06:02:43 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-15 22:40:31 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-15 22:40:31 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-15 22:40:31 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-15 22:40:51 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-15 22:40:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-15 22:40:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-15 22:40:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-15 22:40:51 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-15 22:40:51 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-15 22:40:51 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-15 22:40:51 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-15 22:40:51 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-15 22:40:52 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-15 22:40:52 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-15 22:40:52 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-15 22:40:52 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-15 22:40:52 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-15 22:40:52 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-15 22:40:52 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-15 22:40:52 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-15 22:40:52 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-15 22:40:52 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-15 22:40:52 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-15 22:40:52 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-15 22:40:52 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-15 22:40:52 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-15 22:40:52 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-15 22:40:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-15 22:40:52 INFO] [activity:161][39m Action: burn_cpu
+[36m[2020-10-15 22:40:52 DEBUG] [python:36][39m Activity 'burn_cpu' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-15 22:40:52 DEBUG] [actions:44][39m Start burn_cpu
+[36m[2020-10-15 22:42:06 DEBUG] [activity:179][39m   => succeeded with 'successful'
+[36m[2020-10-15 22:42:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-15 22:42:06 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-10-15 22:42:06 INFO] [run:807][39m Let's rollback...
+[36m[2020-10-15 22:42:06 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-15 22:42:06 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-10-15 22:42:06 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-15 22:42:06 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-10-15 22:42:06 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-15 22:42:06 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-15 22:42:06 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-16 09:58:31 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-16 09:58:31 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-16 09:58:31 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-16 09:58:34 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-16 09:58:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-16 09:58:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-16 09:58:34 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-16 09:58:34 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-16 09:58:34 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-16 09:58:34 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-16 09:58:34 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-16 09:58:34 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-16 09:58:34 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-16 09:58:34 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-16 09:58:34 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-16 09:58:34 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-16 09:58:34 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-16 09:58:34 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-16 09:58:34 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-16 09:58:34 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-16 09:58:34 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-16 09:58:34 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-16 09:58:34 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-16 09:58:34 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-16 09:58:34 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-16 09:58:34 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-16 09:58:34 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-16 09:58:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-16 09:58:34 INFO] [activity:161][39m Action: burn_cpu
+[36m[2020-10-16 09:58:34 DEBUG] [python:36][39m Activity 'burn_cpu' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-16 09:58:34 DEBUG] [actions:44][39m Start burn_cpu
+[36m[2020-10-16 09:59:42 DEBUG] [activity:179][39m   => succeeded with 'successful'
+[36m[2020-10-16 09:59:42 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-16 09:59:42 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-10-16 09:59:42 INFO] [run:807][39m Let's rollback...
+[36m[2020-10-16 09:59:42 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-16 09:59:42 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-10-16 09:59:42 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-16 09:59:42 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-10-16 09:59:42 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-16 09:59:42 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-16 09:59:42 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:44:00 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-26 05:44:00 DEBUG] [cli:75][39m Running command 'init'
+[36m[2020-10-26 05:44:00 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-26 05:44:10 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-26 05:45:06 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-26 05:45:06 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-26 05:45:06 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-26 05:45:12 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-26 05:45:12 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:45:12 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:45:12 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:45:12 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-26 05:45:12 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-26 05:45:12 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:45:12 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:45:12 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:45:12 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-26 05:45:12 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:45:12 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:45:12 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-26 05:45:12 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:45:12 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:45:12 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:45:12 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-26 05:45:12 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-26 05:45:12 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-26 05:45:12 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-26 05:45:12 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-26 05:45:12 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-26 05:45:12 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-26 05:45:12 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-26 05:45:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-26 05:45:12 INFO] [activity:161][39m Action: fill_disk
+[36m[2020-10-26 05:45:12 DEBUG] [python:36][39m Activity 'fill_disk' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-26 05:45:12 DEBUG] [actions:83][39m Start fill_disk: configuration='{}', host='192.168.229.131'
+[36m[2020-10-26 05:45:15 DEBUG] [activity:179][39m   => succeeded with 'successful'
+[36m[2020-10-26 05:45:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-26 05:45:15 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-10-26 05:45:15 INFO] [run:807][39m Let's rollback...
+[36m[2020-10-26 05:45:15 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:45:15 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-10-26 05:45:15 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:45:15 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-10-26 05:45:15 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-26 05:45:15 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-26 05:45:15 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:46:30 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-26 05:46:30 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-26 05:46:30 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-26 05:46:31 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-26 05:46:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:46:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:46:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:46:31 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-26 05:46:31 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-26 05:46:31 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:46:31 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:46:31 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:46:31 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-26 05:46:31 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:46:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:46:31 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-26 05:46:31 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:46:31 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:46:31 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:46:31 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-26 05:46:31 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-26 05:46:31 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-26 05:46:31 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-26 05:46:31 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-26 05:46:31 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-26 05:46:31 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-26 05:46:31 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-26 05:46:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-26 05:46:31 INFO] [activity:161][39m Action: fill_disk
+[36m[2020-10-26 05:46:31 DEBUG] [python:36][39m Activity 'fill_disk' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-26 05:46:31 DEBUG] [actions:83][39m Start fill_disk: configuration='{}', host='192.168.229.131'
+[36m[2020-10-26 05:46:48 DEBUG] [activity:179][39m   => succeeded with 'failed'
+[36m[2020-10-26 05:46:48 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-26 05:46:48 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-10-26 05:46:48 INFO] [run:807][39m Let's rollback...
+[36m[2020-10-26 05:46:48 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:46:48 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-10-26 05:46:48 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:46:48 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-10-26 05:46:48 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-26 05:46:48 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-26 05:46:48 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:48:57 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-26 05:48:57 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-26 05:48:57 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-26 05:48:58 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-26 05:48:58 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:48:58 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:48:58 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:48:58 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-26 05:48:58 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-26 05:48:58 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:48:58 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:48:58 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:48:58 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-26 05:48:58 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:48:58 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:48:58 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-26 05:48:58 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:48:58 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:48:58 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:48:58 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-26 05:48:58 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-26 05:48:58 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-26 05:48:58 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-26 05:48:58 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-26 05:48:58 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-26 05:48:58 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-26 05:48:58 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-26 05:48:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-26 05:48:58 INFO] [activity:161][39m Action: fill_disk
+[36m[2020-10-26 05:48:58 DEBUG] [python:36][39m Activity 'fill_disk' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-26 05:48:58 DEBUG] [actions:83][39m Start fill_disk: configuration='{}', host='192.168.229.131'
+[36m[2020-10-26 05:49:14 DEBUG] [activity:179][39m   => succeeded with 'failed'
+[36m[2020-10-26 05:49:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-26 05:49:14 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-10-26 05:49:14 INFO] [run:807][39m Let's rollback...
+[36m[2020-10-26 05:49:14 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:49:14 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-10-26 05:49:14 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:49:14 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-10-26 05:49:14 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-26 05:49:14 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-26 05:49:14 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:49:16 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-26 05:49:16 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-26 05:49:16 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2020-10-26 05:49:18 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-26 05:49:18 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:49:18 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-26 05:49:18 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:49:18 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-26 05:49:18 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-26 05:49:18 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:49:18 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:49:18 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:49:18 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-26 05:49:18 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-26 05:49:18 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-26 05:49:18 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-26 05:49:18 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-26 05:49:18 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-26 05:49:18 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-26 05:49:18 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-26 05:49:18 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-26 05:49:18 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-26 05:49:18 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-26 05:49:18 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-26 05:49:18 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-26 05:49:18 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-26 05:49:18 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-26 05:49:18 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-26 05:49:18 INFO] [activity:161][39m Action: fill_disk
+[36m[2020-10-26 05:49:18 DEBUG] [python:36][39m Activity 'fill_disk' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-26 05:49:18 DEBUG] [actions:83][39m Start fill_disk: configuration='{}', host='192.168.229.131'
+[36m[2020-10-26 05:49:46 DEBUG] [activity:179][39m   => succeeded with 'successful'
+[36m[2020-10-26 05:49:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-26 05:49:46 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-10-26 05:49:46 INFO] [run:807][39m Let's rollback...
+[36m[2020-10-26 05:49:46 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:49:46 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-10-26 05:49:46 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-10-26 05:49:46 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2020-10-26 05:49:46 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-26 05:49:46 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-26 05:49:46 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-28 21:33:48 DEBUG] [cli:74][39m ###############################################################################
+[36m[2020-10-28 21:33:48 DEBUG] [cli:75][39m Running command 'run'
+[36m[2020-10-28 21:33:48 DEBUG] [cli:79][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[33m[2020-10-28 21:33:49 WARNING] [check:36][39m 
+    There is a new version (1.7.1) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2020-10-28 21:33:49 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2020-10-28 21:33:49 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-28 21:33:49 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-10-28 21:33:49 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-28 21:33:49 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2020-10-28 21:33:49 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2020-10-28 21:33:49 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-28 21:33:49 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-28 21:33:49 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-28 21:33:52 INFO] [experiment:96][39m Experiment looks valid
+[36m[2020-10-28 21:33:52 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-10-28 21:33:52 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-10-28 21:33:52 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2020-10-28 21:33:52 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2020-10-28 21:33:52 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-10-28 21:33:52 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-10-28 21:33:52 INFO] [run:320][39m Running experiment: test
+[36m[2020-10-28 21:33:52 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-10-28 21:33:52 INFO] [run:340][39m Steady-state strategy: default
+[32m[2020-10-28 21:33:52 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2020-10-28 21:33:52 INFO] [run:349][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2020-10-28 21:33:52 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-10-28 21:33:52 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2020-10-28 21:33:52 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-10-28 21:33:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-10-28 21:33:52 INFO] [activity:161][39m Action: fill_disk
+[36m[2020-10-28 21:33:52 DEBUG] [python:36][39m Activity 'fill_disk' loaded from '/root/chaostoolkit-ansible/chaostoolkit_ansible/machine/actions.py'
+[36m[2020-10-28 21:33:52 DEBUG] [actions:83][39m Start fill_disk: configuration='{}', host='192.168.229.131'
+[36m[2020-10-28 21:34:01 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-10-28 21:34:01 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[33m[2020-10-28 21:34:01 WARNING] [run:388][39m Received a termination signal (Ctrl-C)...
+[32m[2020-10-28 21:34:02 INFO] [run:419][39m Experiment ended with status: interrupted
+[36m[2020-10-28 21:34:02 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-10-28 21:34:02 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-10-28 21:34:02 DEBUG] [caching:42][39m Clearing activities cache

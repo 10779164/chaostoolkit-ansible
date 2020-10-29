@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "title": "test",
+    "description": "N/A",
+    "tags": [],
+    "method": [
+        {
+            "type": "action",
+            "name": "burn_cpu",
+            "provider": {
+                "type": "python",
+                "module": "chaosansible.machine.actions",
+                "func": "burn_cpu",
+                "arguments": {
+                    "host": "192.168.229.129",
+                    "user": "root",
+                    "execution_duration": "60"
+                }
+            }
+        }
+    ]
+}

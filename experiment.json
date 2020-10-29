@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0",
+    "title": "test",
+    "description": "N/A",
+    "tags": [],
+    "method": [
+        {
+            "type": "action",
+            "name": "fill_disk",
+            "provider": {
+                "type": "python",
+                "module": "chaostoolkit_ansible.machine.actions",
+                "func": "fill_disk",
+                "arguments": {
+                    "host": "192.168.229.131",
+                    "user": "root",
+                    "execution_duration": "120",
+                    "size": "1000"
+                }
+            }
+        }
+    ]
+}

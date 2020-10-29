@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0",
+    "title": "test",
+    "description": "N/A",
+    "tags": [],
+    "method": [
+        {
+            "type": "action",
+            "name": "kill_process",
+            "provider": {
+                "type": "python",
+                "module": "chaosansible.machine.actions",
+                "func": "kill_process",
+                "arguments": {
+                    "host": "192.168.229.129",
+                    "execution_duration": "30",
+                    "process": "sshd",
+                    "signal": "-9"
+                }
+            }
+        }
+    ]
+}

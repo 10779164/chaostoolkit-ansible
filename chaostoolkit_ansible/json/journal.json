@@ -1,0 +1,64 @@
+{
+  "chaoslib-version": "1.14.0",
+  "platform": "Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core",
+  "node": "chaostoolkit",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "test",
+    "description": "N/A",
+    "tags": [],
+    "method": [
+      {
+        "type": "action",
+        "name": "kill_process",
+        "provider": {
+          "type": "python",
+          "module": "chaosansible.machine.actions",
+          "func": "kill_process",
+          "arguments": {
+            "host": "192.168.229.129",
+            "execution_duration": "30",
+            "process": "sshd",
+            "signal": "-9"
+          }
+        }
+      }
+    ],
+    "dry": false
+  },
+  "start": "2020-09-10T11:24:54.524343",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": null,
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "kill_process",
+        "provider": {
+          "type": "python",
+          "module": "chaosansible.machine.actions",
+          "func": "kill_process",
+          "arguments": {
+            "host": "192.168.229.129",
+            "execution_duration": "30",
+            "process": "sshd",
+            "signal": "-9"
+          }
+        }
+      },
+      "output": true,
+      "status": "succeeded",
+      "start": "2020-09-10T11:24:54.525463",
+      "end": "2020-09-10T11:25:27.902978",
+      "duration": 33.377515
+    }
+  ],
+  "rollbacks": [],
+  "end": "2020-09-10T11:25:27.903630",
+  "duration": 33.390766620635986
+}

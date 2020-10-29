@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0",
+    "title": "test",
+    "description": "N/A",
+    "tags": [],
+    "method": [
+        {
+            "type": "action",
+            "name": "network_latency",
+            "provider": {
+                "type": "python",
+                "module": "chaosansible.machine.actions",
+                "func": "network_latency",
+                "arguments": {
+                    "host": "192.168.229.129",
+                    "execution_duration": "60",
+                    "delay": "1000ms",
+                    "variance": "500ms",
+                    "ratio": "30%",
+                    "device": "ens33"
+                }
+            }
+        }
+    ]
+}

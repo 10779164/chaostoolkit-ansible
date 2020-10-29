@@ -1,0 +1,314 @@
+{
+  "chaoslib_version": "1.13.1",
+  "id": "357b39f0-0ad0-4a81-9583-6cff5ba2d53e",
+  "target": "chaosansible",
+  "date": "2020-09-10T11:23:26.566888Z",
+  "platform": {
+    "system": "Linux",
+    "node": "chaostoolkit",
+    "release": "3.10.0-1127.el7.x86_64",
+    "version": "#1 SMP Tue Mar 31 23:36:51 UTC 2020",
+    "machine": "x86_64",
+    "proc": "x86_64",
+    "python": "3.6.8"
+  },
+  "extension": {
+    "name": "chaostoolkit-ansible",
+    "version": "0.1.0"
+  },
+  "activities": [
+    {
+      "type": "action",
+      "name": "burn_cpu",
+      "mod": "chaosansible.machine.actions",
+      "doc": "burn CPU up to 100% at random machines.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Duration of the stress test (in seconds) that generates high CPU usage.\n    Defaults to 60 seconds.\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "default": "root",
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "burn_io",
+      "mod": "chaosansible.machine.actions",
+      "doc": "Increases the Disk I/O operations per second of the virtual machine.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Lifetime of the file created. Defaults to 120 seconds.\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "fill_disk",
+      "mod": "chaosansible.machine.actions",
+      "doc": "For now do not have this scenario, fill the disk with random data.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Lifetime of the file created. Defaults to 120 seconds.\nsize : str\n    Size of the file created on the disk. Defaults to 1GB.\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "default": "root",
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "120",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "default": "1000",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "kill_process",
+      "mod": "chaosansible.machine.actions",
+      "doc": "kill -s [signal_as_below] [processname]\nHUP INT QUIT ILL TRAP ABRT EMT FPE KILL BUS SEGV SYS PIPE ALRM TERM URG\nSTOP TSTP CONT CHLD TTIN TTOU IO XCPU XFSZ VTALRM PROF WINCH INFO USR1 USR2\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional default to 1 second\n    This is not technically not useful as the process usually is killed\n    without and delay, however you can set more seconds here to let the\n    thread wait for more time to extend your experiment execution in case\n    you need to watch more on the observation metrics.\nprocess : str\n    pid or process that kill command accepts\nsignal : str , default to \"\"\n    The signal of kill command, use kill -l for help\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        },
+        {
+          "name": "signal",
+          "default": "",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "killall_processes",
+      "mod": "chaosansible.machine.actions",
+      "doc": "The killall utility kills processes selected by name\nrefer to https://linux.die.net/man/1/killall\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional default to 1 second\n    This is not technically not useful as the process usually is killed\n    without and delay, however you can set more seconds here to let the\n    thread wait for more time to extend your experiment execution in case\n    you need to watch more on the observation metrics.\nprocess_name : str\n    Name of the process to be killed\nsignal : str , default to \"\"\n    The signal of killall command, e.g. use -9 to force kill\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "process_name",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        },
+        {
+          "name": "signal",
+          "default": "",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "network_advanced",
+      "mod": "chaosansible.machine.actions",
+      "doc": "do a customized operations on the virtual machine via Linux - TC.\nFor windows, no solution as for now.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Lifetime of the file created. Defaults to 60 seconds.\ncommand : str\n    the tc command, e.g.  loss 15%\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "command",
+          "default": "",
+          "type": "string"
+        },
+        {
+          "name": "device",
+          "default": "eth0",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "network_corruption",
+      "mod": "chaosansible.machine.actions",
+      "doc": "do a network loss operations on the virtual machine via Linux - TC.\nFor windows, no solution as for now.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Lifetime of the file created. Defaults to 60 seconds.\ncorruption_ratio : str:\n    corruption_ratio = \"30%\"\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "corruption_ratio",
+          "default": "5%",
+          "type": "string"
+        },
+        {
+          "name": "device",
+          "default": "eth0",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "network_latency",
+      "mod": "chaosansible.machine.actions",
+      "doc": "Increases the response time of the virtual machine.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Lifetime of the file created. Defaults to 120 seconds.\ndelay : str\n    Added delay in ms. Defaults to 1000ms.\nvariance : str\n    Variance of the delay in ms. Defaults to 500ms.\nratio: str = \"5%\", optional\n    the specific ratio of how many Variance of the delay in ms.\n    Defaults to \"\".\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "delay",
+          "default": "1000ms",
+          "type": "string"
+        },
+        {
+          "name": "variance",
+          "default": "500ms",
+          "type": "string"
+        },
+        {
+          "name": "ratio",
+          "default": "",
+          "type": "string"
+        },
+        {
+          "name": "device",
+          "default": "eth0",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    },
+    {
+      "type": "action",
+      "name": "network_loss",
+      "mod": "chaosansible.machine.actions",
+      "doc": "do a network loss operations on the virtual machine via Linux - TC.\nFor windows, no solution as for now.\n\nParameters\n----------\ninstance_ids : list\n    Filter the virtual machines. If the filter is omitted all machines in\n    the subscription will be selected as potential chaos candidates.\nexecution_duration : str, optional\n    Lifetime of the file created. Defaults to 60 seconds.\nloss_ratio : str:\n    loss_ratio = \"30%\"\nconfiguration : Configuration\n    Chaostoolkit Configuration\nsecrets : Secrets\n    Chaostoolkit Secrets",
+      "arguments": [
+        {
+          "name": "host",
+          "default": null,
+          "type": "string"
+        },
+        {
+          "name": "execution_duration",
+          "default": "60",
+          "type": "string"
+        },
+        {
+          "name": "loss_ratio",
+          "default": "5%",
+          "type": "string"
+        },
+        {
+          "name": "device",
+          "default": "eth0",
+          "type": "string"
+        },
+        {
+          "name": "configuration",
+          "default": null,
+          "type": "mapping"
+        }
+      ]
+    }
+  ],
+  "system": null
+}
